@@ -1,0 +1,79 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  margin: 92px 24px 223px;
+
+  @media (min-width: 768px) {
+    margin: 86px 50px 188px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 1020px;
+
+  &__image {
+    display: block;
+    max-width: 312px;
+    height: 104px;
+    width: 100%;
+    background: url(../../images/rickandmorty.svg) no-repeat center;
+    background-size: contain;
+    margin: 0 auto 32px;
+
+    @media (min-width: 768px) {
+      max-width: 600px;
+      height: 200px;
+      margin: 0 auto 16px;
+    }
+  }
+
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-icon {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    background: url(../../images/search_icon.svg) no-repeat center;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 16px 16px 16px 48px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    gap: 28px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 28px 20px;
+      margin: 61px 0;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
