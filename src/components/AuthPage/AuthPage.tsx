@@ -1,19 +1,17 @@
 import React, { useContext } from 'react';
 
 import {
-  GoogleLoginButton,
-  FacebookLoginButton,
+  GoogleLoginButton
 } from 'react-social-login-buttons';
 import { AuthContext } from '../../context/AuthProvider';
 import './AuthPage.scss';
 
 export const AuthPage: React.FC = () => {
-  const { handleGoogleLogin, handleFacebookLogin } = useContext(AuthContext);
+  const { handleGoogleLogin } = useContext(AuthContext);
 
   return (
     <div className="wrapper">
-      <GoogleLoginButton onClick={handleGoogleLogin} />
-      <FacebookLoginButton onClick={handleFacebookLogin} />
+      <GoogleLoginButton onClick={handleGoogleLogin} />      
     </div>
   );
 };

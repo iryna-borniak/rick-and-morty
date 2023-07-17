@@ -15,6 +15,15 @@
 ```bash
 $ npm install
 ```
-## Running the app
+## Running the App
 ```bash
 $ npm run start
+```
+## App Screenshots
+Main page:
+
+![Main](src/images/main.png)
+
+Character page:
+
+![Character](src/images/character.png)
